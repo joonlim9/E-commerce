@@ -31,17 +31,6 @@ const ProductScreen = ({ history, match }) => {
     history.push(`/cart/${match.params.id}?qty=${qty}`);
   };
 
-  // #12
-  // const [product, setPrduct] = useState([]);
-  // useEffect(() => {
-  // const fetchProduct = async () => {
-  //   const {data} = await axios.get(`/api/products/${match.params.id}`)
-
-  //   setProduct(data)
-  // }
-
-  // fetchProduct()
-  // }, [match]);
   return (
     <div>
       <Link className='btn btn-light my-3' to='/'>

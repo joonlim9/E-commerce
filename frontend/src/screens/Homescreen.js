@@ -5,23 +5,9 @@ import Product from "../components/Product";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProducts } from "../actions/productActions";
-import axios from "axios";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
-
-  // #12
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  // const fetchProducts = async () => {
-  //   const {data} = await axios.get('/api/products')
-
-  //   setProducts(data)
-  // }
-
-  // fetchProducts()
-  // }, []);
-
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
@@ -30,7 +16,7 @@ const HomeScreen = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <div>
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
@@ -47,7 +33,7 @@ const HomeScreen = () => {
           </Row>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
