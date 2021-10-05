@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -8,7 +8,6 @@ import {
   ListGroup,
   Card,
   Button,
-  ListGroupItem,
   Form,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
@@ -32,8 +31,19 @@ const ProductScreen = ({ history, match }) => {
     history.push(`/cart/${match.params.id}?qty=${qty}`);
   };
 
+  // #12
+  // const [product, setPrduct] = useState([]);
+  // useEffect(() => {
+  // const fetchProduct = async () => {
+  //   const {data} = await axios.get(`/api/products/${match.params.id}`)
+
+  //   setProduct(data)
+  // }
+
+  // fetchProduct()
+  // }, [match]);
   return (
-    <>
+    <div>
       <Link className='btn btn-light my-3' to='/'>
         Go Back
       </Link>
@@ -42,7 +52,7 @@ const ProductScreen = ({ history, match }) => {
       ) : error ? (
         <Message variant='danger'>{error}</Message>
       ) : (
-        <>
+        <div>
           <Row>
             <Col md={6}>
               <Image src={product.image} alt={product.name} fluid></Image>
@@ -56,7 +66,7 @@ const ProductScreen = ({ history, match }) => {
                   <Rating
                     value={product.rating}
                     text={`${product.numReviews} reviews`}
-                  ></Rating>
+                  />
                 </ListGroup.Item>
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
                 <ListGroup.Item>
@@ -121,9 +131,9 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
-        </>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 export default ProductScreen;

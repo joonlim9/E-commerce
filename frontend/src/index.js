@@ -8,9 +8,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <Proivder store={store}>
+  <Provider store={store}>
     <App />
-  </Proivder>,
+  </Provider>,
   document.getElementById("root")
 );
 
