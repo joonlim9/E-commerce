@@ -819,9 +819,9 @@
   "version" "3.0.0"
 
 "is-glob@^4.0.1", "is-glob@~4.0.1":
-  "integrity" "sha512-ZZTOjRcDjuAAAv2cTBQP/lL59ZTArx77+7UzHdWW/XB1mrfp7DEaVpKmZ0XIzx+M7AxfhKcqV+nMetUQmFifwg=="
-  "resolved" "https://registry.npmjs.org/is-glob/-/is-glob-4.0.2.tgz"
-  "version" "4.0.2"
+  "integrity" "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg=="
+  "resolved" "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz"
+  "version" "4.0.3"
   dependencies:
     "is-extglob" "^2.1.1"
 
@@ -1166,7 +1166,7 @@
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz"
   "version" "0.6.2"
 
-"nodemon@^2.0.4":
+"nodemon@^2.0.13":
   "integrity" "sha512-UMXMpsZsv1UXUttCn6gv8eQPhn6DR4BW+txnL3IN5IHqrCwcrT/yWHfL35UsClGXknTH79r5xbu+6J1zNHuSyA=="
   "resolved" "https://registry.npmjs.org/nodemon/-/nodemon-2.0.13.tgz"
   "version" "2.0.13"
@@ -1564,9 +1564,9 @@
   "version" "13.5.2"
 
 "signal-exit@^3.0.2":
-  "integrity" "sha512-rqYhcAnZ6d/vTPGghdrw7iumdcbXpsk1b8IG/rz+VWV51DM0p7XCtMoJ3qhPLIbp3tvyt3pKRbaaEMZYpHto8Q=="
-  "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.4.tgz"
-  "version" "3.0.4"
+  "integrity" "sha512-KWcOiKeQj6ZyXx7zq4YxSMgHRlod4czeBQZrPb8OKcohcqAXShm7E20kEMle9WBt26hFcAf0qLOcp5zmY7kOqQ=="
+  "resolved" "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.5.tgz"
+  "version" "3.0.5"
 
 "sliced@1.0.1":
   "integrity" "sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E="
