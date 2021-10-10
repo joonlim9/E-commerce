@@ -8,7 +8,7 @@ npm run dev
 npm run server
 ```
 
-### Heroku
+### Heroku App
 
 ```
 https://wolverineshop.herokuapp.com/
