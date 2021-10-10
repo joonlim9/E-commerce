@@ -48,7 +48,7 @@ const UserEditScreen = ({ match, history }) => {
   };
 
   return (
-    <>
+    <div>
       <Link to='/admin/userlist' className='btn btn-light my-3'>
         Go Back
       </Link>
@@ -97,7 +97,7 @@ const UserEditScreen = ({ match, history }) => {
           </Form>
         )}
       </FormContainer>
-    </>
+    </div>
   );
 };
 

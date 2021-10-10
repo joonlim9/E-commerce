@@ -92,7 +92,7 @@ const ProductEditScreen = ({ match, history }) => {
   };
 
   return (
-    <>
+    <div>
       <Link to='/admin/productlist' className='btn btn-light my-3'>
         Go Back
       </Link>
@@ -189,7 +189,7 @@ const ProductEditScreen = ({ match, history }) => {
           </Form>
         )}
       </FormContainer>
-    </>
+    </div>
   );
 };
 

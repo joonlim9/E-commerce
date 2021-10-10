@@ -71,7 +71,7 @@ const ProductListScreen = ({ history, match }) => {
   };
 
   return (
-    <>
+    <div>
       <Row className='align-items-center'>
         <Col>
           <h1>Products</h1>
@@ -91,7 +91,7 @@ const ProductListScreen = ({ history, match }) => {
       ) : error ? (
         <Message variant='danger'>{error}</Message>
       ) : (
-        <>
+        <div>
           <Table striped bordered hover responsive className='table-sm'>
             <thead>
               <tr>
@@ -130,9 +130,9 @@ const ProductListScreen = ({ history, match }) => {
             </tbody>
           </Table>
           <Paginate pages={pages} page={page} isAdmin={true} />
-        </>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 
