@@ -71,4 +71,5 @@ const LoginScreen = ({ location, history }) => {
     </FormContainer>
   );
 };
+
 export default LoginScreen;
